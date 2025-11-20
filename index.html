@@ -1,334 +1,127 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>YF7 Tournaments</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="./image/favicon.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./site 2.css">
 </head>
-<body>
-  <div id="background">
-
-    <!-- Barre du haut -->
-    <header class="top-bar">
-      <div class="cell"><a href="#who">QUI SOMMES NOUS?</a></div>
-      <div class="cell"><a href="#matcherino">MATCHERINO?</a></div>
-      <div class="cell"><a href="#tournoi">TOURNOI</a></div>
-      <div class="cell"><a href="#vainqueurs">VAINQUEURS</a></div>
-      <div class="cell"><a href="#partner">PARTENAIRES</a></div>
-      <div class="cell"><a href="#recrutement">NOUS REJOINDRE?</a></div>
+<header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">YF7 Tournaments</a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#tournaments">Tournaments</a></li>
+                    <li><a href="#winners">Winners Team</a></li>
+                    <li><a href="#partners">Partners</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
     </header>
 
-    <!-- Carrousel centré -->
-    <main class="carousel-container">
-      <div class="carousel">
-        <button class="prev">❮</button>
-
-        <img src="./image/reseau_carrousel.png" alt="Image 1" class="slide active">
-        <img src="./image/banniere carrousel.png" alt="Image 2" class="slide">
-        <img src="./image/partnership.png" alt="Image 3" class="slide" id="img3">
-
-        <button class="next">❯</button>
-
-        <div class="dots">
-          <span class="dot active"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Brawl Stars Competitive Tournaments</h1>
+                <p>Join the ultimate Brawl Stars competitive platform with regular tournaments, professional organization, and amazing prizes.</p>
+                <a href="#tournaments" class="btn">View Tournaments</a>
+            </div>
         </div>
-      </div>
-    </main>
-  </div>
-<div class="who" id="who">
-  <h1 id="w">QUI SOMMES NOUS ?</h1>
+    </section>
 
-  <!-- Premier membre (gauche) -->
-  <div class="team-member left">
-    <img src="./image/yf7.png" alt="YF7-pdp-discord" class="pdpy">
-    <div class="text">
-      <h2>YF7</h2>
-      <p> YF7 est un streamer français spécialisé dans Brawl Stars, reconnu pour son gameplay stratégique et son énergie communicative. 
-          Sur sa chaîne Twitch, il propose des sessions de jeu dynamiques, des conseils pour progresser et des moments de fun partagés avec sa communauté fidèle. 
-          Au-delà du streaming, YF7 s’investit activement dans l’organisation de tournois sur Matcherino, contribuant à la scène compétitive de Brawl Stars.</p>
-    </div>
-  </div>
+    <section id="tournaments">
+        <div class="container">
+            <div class="section-title">
+                <h2>Upcoming Tournaments</h2>
+                <p>Check out our upcoming Brawl Stars events and register to compete</p>
+            </div>
+            <div class="tournaments-grid" id="tournaments-container">
+            </div>
+        </div>
+    </section>
 
-  <!-- Deuxième membre (droite) -->
-  <div class="team-member right">
-    <img src="./image/nartoxy.png" alt="nartoxy" class="pdpn">
-    <div class="text">
-      <h2>Nartoxy</h2>
-      <p>Nartoxy est un membre essentiel de l’équipe, reconnu comme le principal investisseur dans nos tournois. Grâce à son soutien financier et logistique, il permet à nos événements de prendre de l’ampleur et de se professionnaliser. En plus de son rôle d’investisseur, Nartoxy s’implique activement dans l’organisation et la gestion des tournois, contribuant à leur bon déroulement et à l’expérience des participants.</p>
-    </div>
-  </div>
+    <section id="winners">
+        <div class="container">
+            <div class="section-title">
+                <h2>Winners Team</h2>
+                <p>Meet the champions of our previous Brawl Stars tournaments</p>
+            </div>
+            <div class="winners-grid" id="winners-container">
+            </div>
+        </div>
+    </section>
 
-  <!-- Troisième membre (gauche) -->
-  <div class="team-member left">
-    <img src="./image/gandzman.png" alt="Gandtzprime" class="pdpg">
-    <div class="text">
-      <h2>Gandtzprime</h2>
-      <p>GandtzPrime est un ancien streamer Twitch spécialisé dans Brawl Stars, reconnu pour sa connaissance approfondie du jeu et son sens de la compétition. Aujourd’hui, il occupe le rôle de principal leader tournament, coordonnant et supervisant l’organisation de nos événements. Grâce à son expérience sur la scène du streaming et à sa maîtrise de la gestion de tournois, GandtzPrime assure le bon déroulement des compétitions et le maintien d’un haut niveau d’exigence. Véritable moteur du projet, il allie passion et professionnalisme pour faire grandir la communauté et renforcer la qualité de nos tournois.</p>
-    </div>
-  </div>
+    <section id="partners">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Partners</h2>
+                <p>We work with industry leaders to bring you the best experience</p>
+            </div>
+            <div class="partners-grid">
+                <div class="partner-card">
+                    <div class="partner-logo">
+                        <img src="BSELO.png" alt="BS-ELO Logo">
+                    </div>
+                    <div class="partner-info">
+                        <h3 class="partner-name">BS-ELO</h3>
+                        <p class="partner-description">Brawl Stars statistics and ranking platform</p>
+                        <a href="https://brawlstars-fed.com" target="_blank" class="partner-website">
+                            <i class="fas fa-external-link-alt"></i>
+                            Visit Website
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
 
-    <!-- quatrieme membre (droite) -->
-  <div class="team-member right">
-    <img src="./image/pdp ikozz.png" alt="ikozz" class="pdpi">
-    <div class="text">
-      <h2>IKOZZ</h2>
-      <p> YF7 est un streamer français spécialisé dans Brawl Stars, reconnu pour son gameplay stratégique et son énergie communicative. 
-          Sur sa chaîne Twitch, il propose des sessions de jeu dynamiques, des conseils pour progresser et des moments de fun partagés avec sa communauté fidèle. 
-          Au-delà du streaming, YF7 s’investit activement dans l’organisation de tournois sur Matcherino, contribuant à la scène compétitive de Brawl Stars.</p>
-    </div>
-  </div>
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Us</h2>
+                <p>Meet the team behind YF7 Tournaments</p>
+            </div>
+            <div class="team-grid">
+            </div>
+        </div>
+    </section>
 
-  <!-- cinquieme membre (gauche) -->
-  <div class="team-member left">
-    <img src="./image/tawfik.avif" alt="tawfik" class="pdpn">
-    <div class="text">
-      <h2>TAWFIK</h2>
-      <p>Nartoxy est un membre essentiel de l’équipe, reconnu comme le principal investisseur dans nos tournois. Grâce à son soutien financier et logistique, il permet à nos événements de prendre de l’ampleur et de se professionnaliser. En plus de son rôle d’investisseur, Nartoxy s’implique activement dans l’organisation et la gestion des tournois, contribuant à leur bon déroulement et à l’expérience des participants.</p>
-    </div>
-  </div>
-
-  <!-- sixieme membre (droite) -->
-  <div class="team-member right">
-    <img src="./image/RAH.jpg" alt="rah" class="pdpn">
-    <div class="text">
-      <h2>RAH</h2>
-      <p>RAH est un passionné de compétition et un acteur de la scène Brawl Stars.
-        En tant que propriétaire et fondateur du serveur Discord Genesis, une structure regroupant plus de 1250 joueurs, il possède une solide expérience dans la gestion de communauté, la mise en place d’événements et la coordination de clubs.
-        Sa rigueur, sa vision stratégique et sa connaissance approfondie de la scène compétitive font de lui un pilier essentiel de notre équipe.
-</p>
-    </div>
-  </div>
-  </div>
-  <div class="moderator">
-    <div class="texts">
-      <p>
-        💼 L’équipe de modération
-
-Nos modérateurs veillent chaque jour au bon déroulement de nos tournois et au respect de la communauté.
-Grâce à eux, l’organisation sur Discord et Matcherino reste fluide, équitable et agréable pour tous les participants.
-Toujours à l’écoute, ils répondent à vos questions, règlent les litiges, et s’assurent que chaque compétition se déroule dans les meilleures conditions possibles.
-
-👥 Nos modérateurs
-        <pre>
-🧡 AKASUN – Présent tout au long des tournois, il veille à la bonne gestion des tickets et au suivi des signalements.
-
-⚡ DARKMATH – Il prend en charge la vérification et la remontée des problèmes signalés, pour garantir une résolution rapide.
-
-🐼 PANDITO – Il accompagne les joueurs tout au long des tournois et s’occupe de répondre aux demandes dans les salons d’assistance.
-
-🔥 CHATAX – Il surveille le bon déroulement général et fait le relais entre la communauté et les organisateurs en cas d’incident.
-        </pre>
-      </p>
-    </div>
-  </div>
-
-</div>
-
-
-  <div class="matcherino" id="matcherino">
-    <h1>
-      MATCHERINO?
-    </h1>
-    <p>
-      <h2>🎮 Qu’est-ce que Matcherino</h2>
-      <pre>
-Matcherino Brawl Stars est une plateforme communautaire dédiée à la création, l’organisation et la gestion de tournois compétitifs sur le jeu Brawl Stars. Conçue pour rassembler les joueurs, les organisateurs et les passionnés, elle offre un environnement structuré et transparent permettant à chacun de participer à des événements de qualité, quel que soit son niveau.
-
-Au cœur du projet se trouve la volonté de soutenir la scène e-sportive francophone de Brawl Stars en mettant en avant l’esprit de compétition, le fair-play et la passion du jeu. Grâce à son système de gestion intégré, Matcherino facilite la planification des tournois, l’inscription des participants, la répartition des récompenses et la communication entre les équipes. Chaque événement est conçu pour offrir une expérience fluide et équitable, tout en valorisant les performances individuelles et collectives.
-
-Matcherino Brawl Stars repose également sur une équipe d’organisation engagée qui veille au bon déroulement des tournois et à l’amélioration continue de la plateforme. Les collaborations avec des streamers, créateurs de contenu et investisseurs permettent d’assurer une visibilité accrue aux compétitions et de proposer des récompenses attractives pour les participants.
-
-Plus qu’une simple plateforme, Matcherino Brawl Stars est un véritable espace communautaire où se rencontrent joueurs expérimentés, nouveaux talents et amateurs d’e-sport. En mettant en avant la passion du jeu et la cohésion de la communauté, Matcherino contribue activement à l’évolution de la scène compétitive et à la reconnaissance du talent des joueurs francophones.
-      </pre>
-
-    </p>
-  </div>
-  <div class="tournoi" id="tournoi">
-    <h1>
-      TOURNOI
-    </h1>
-    <p>
-    <h2>Nos tournois sur Matcherino</h2>
-      <pre>
-Les tournois Matcherino Brawl Stars sont au cœur de notre engagement envers la scène compétitive. Organisés régulièrement, ils rassemblent des joueurs de tous niveaux autour d’un objectif commun : la performance, le fair-play et la passion du jeu.
-Ces tournois offrent un cadre structuré, dynamique et accessible, permettant à chacun de vivre une véritable expérience e-sportive.
-
-Chaque compétition est gérée via la plateforme Matcherino, reconnue pour sa fiabilité et sa transparence. Grâce à ce système, les inscriptions, les récompenses et la gestion des matchs sont entièrement automatisées, garantissant une organisation fluide et professionnelle. Les joueurs peuvent suivre le déroulement des tournois en temps réel, consulter les classements et s’impliquer pleinement dans chaque étape de la compétition.
-
-Nos tournois se distinguent également par la qualité de leur encadrement : une équipe investie assure la coordination, le suivi et l’accompagnement des participants. Nous veillons à offrir une ambiance compétitive mais conviviale, où chaque joueur a sa chance de se démarquer.
-Des cash prizes, des récompenses exclusives et une mise en avant des meilleures performances viennent renforcer la motivation des participants et valoriser leurs efforts.
-
-Au-delà de la compétition, nos tournois ont pour ambition de faire grandir la communauté francophone de Brawl Stars. Ils favorisent les échanges entre joueurs, streamers et fans du jeu, tout en créant un véritable lien entre les différents acteurs de la scène e-sportive.
-
-Participer à un tournoi Matcherino, c’est rejoindre une aventure collective portée par la passion, la compétition et le partage. Que vous soyez joueur confirmé ou débutant motivé, nos événements sont l’occasion parfaite de montrer votre talent, progresser et vivre le meilleur de Brawl Stars.
-      </pre>
-    <div id="calendar">
-        <h2>Prochains tournois</h2>
-        <ul id="tournament-list"></ul>
-    </div>
-    </p>
-  </div>
-  <div class="vainqueurs" id="vainqueurs">
-    <p>
-        <!-- Premier membre (gauche) -->
-  <h1>VAINQUEURS</h1>
-
-<div class="team-member left">
-  <div class="text">
-    <h2>TEAM : BC ACADEMIE</h2>
-    <p class="winner">
-      <span>SANFIRE</span>
-      <span>CRACKI</span>
-      <span>YANNICK</span>
-    </p>
-  </div>
-</div>
-
-<div class="team-member right">
-  <div class="text">
-    <h2>TEAM : Kumalazawesta</h2>
-    <p class="winner">
-      <span>ZIMON</span>
-      <span>MINE</span>
-      <span>KANYE</span>
-    </p>
-  </div>
-</div>
-
-<div class="team-member left">
-  <div class="text">
-    <h2>TEAM : Flowers</h2>
-    <p class="winner">
-      <span>Obsession</span>
-      <span>Unlucky😼😼</span>
-      <span>Cracky</span>
-    </p>
-  </div>
-</div>
-
-<div class="team-member right">
-  <div class="text">
-    <h2>TEAM : .(1)</h2>
-    <p class="winner">
-      <span>Zimon</span>
-      <span>Kanye</span>
-      <span>OICwap</span>
-    </p>
-  </div>
-</div>
-
-<div class="team-member left">
-  <div class="text">
-    <h2>TEAM : NEXO ESPORT</h2>
-    <p class="winner">
-      <span>Oneshot</span>
-      <span>Slesta</span>
-      <span>Destiny</span>
-    </p>
-  </div>
-</div>
-
-<div class="team-member right">
-  <div class="text">
-    <h2>TEAM : (.......)</h2>
-    <p class="winner">
-      <span>Dede</span>
-      <span>Areology</span>
-      <span>Bastien</span>
-    </p>
-  </div>
-</div>
-
-  <div class="partenariat" id="partner">
-    <h1>
-      PARTENARIATS
-    </h1>
-    <p>
-      <h3>PANDARIA ESPORT</h3>
-      <pre>
-Présentation
-Passion, Ambitions, Excellence
-Qui sommes-nous ?
-🎮 Pandaria Esport – Passion. Ambition. Excellence. 💥
-
-Depuis 2018, Pandaria Esport, association loi 1901 basée à Bordeaux, incarne une vision forte de l’esport : celle d’une aventure humaine, où chaque joueur est bien plus qu’un pseudo derrière un écran.
-Notre parcours
-✨ En 7 ans d'engagement, nous avons accompagné des talents jusqu'aux scènes nationales et internationales, toujours guidés par nos valeurs fondatrices :
-➡️ Passion, moteur de tous nos projets
-➡️ Ambition, pour viser toujours plus haut
-➡️ Excellence, dans notre encadrement et notre exigence
-Notre vision
-﻿🎯﻿ Chez Pandaria, nous croyons que la performance passe avant tout par l’épanouissement personnel. C’est pourquoi notre accompagnement est sur-mesure, et notre relation avec les joueurs profondément bienveillante. Chacun mérite un cadre sain, structuré, et humain pour progresser sereinement.
-        
-﻿🔥﻿ Aujourd’hui encore, notre projet évolue. Et demain ? C’est avec vous que nous voulons continuer à écrire cette histoire.
-        
-﻿📍﻿ Depuis Bordeaux, pour rayonner partout.
-
-Leur serveur discord? <a href="https://discord.gg/56ftVqTn">https://discord.gg/56ftVqTn</a>
-      </pre>
-      <h3>BRAWL SOURCES</h3>
-      <pre>
-🔷 Brawl Source – Votre source d’information francophone dédiée à Brawl Stars
-
-Brawl Source est une plateforme francophone spécialisée dans l’actualité, les guides, et les contenus communautaires autour de Brawl Stars.
-Elle offre aux joueurs un accès régulier à des news, analyses et fuites, permettant de rester à jour avec la scène du jeu.
-
-En tant que partenaire, notre collaboration avec Brawl Source permet de renforcer la visibilité de nos événements et d’assurer une communication fluide auprès de la communauté.
-Ensemble, nous œuvrons pour offrir une expérience plus complète et engagée aux joueurs et fans de la franchise.
-
-Leur discord? <a href="https://discord.gg/cHjefjRe">https://discord.gg/cHjefjRe</a>
-      </pre>
-      <h3>BTLN</h3>
-      <pre>
-🔥 BTLN – L’une des plus grandes structures d’information sur Brawl Stars
-
-BTLN est une structure majeure dédiée à l’actualité, l’analyse et la communication autour de Brawl Stars.
-Présente depuis plusieurs années dans la communauté, elle regroupe des joueurs, créateurs et passionnés qui partagent chaque jour les dernières news, fuites, classements et événements du jeu.
-
-Grâce à son influence et à son professionnalisme, BTLN s’est imposée comme une référence francophone pour tous ceux qui veulent rester informés sur la scène compétitive et communautaire.
-
-Notre partenariat avec BTLN nous permet de renforcer la visibilité de nos tournois et d’assurer une meilleure diffusion des informations auprès des joueurs.
-Une collaboration basée sur la passion, la fiabilité et l’envie commune de faire grandir la scène eSport Brawl Stars.
-
-Leur discord? <a href="https://discord.gg/46HNj27Z">https://discord.gg/46HNj27Z</a>
-      </pre>
-    </p>
-  </div>
-  <div class="recrutement" id="recrutement">
-    <h1>
-      NOUS REJOINDRE
-    </h1>
-    <p>
-      Merci de remplir ce <a href="https://docs.google.com/forms/d/e/1FAIpQLSfd0JlssI3QAEPDfqHIuRf-DlHyEFXqGdnL1QtVLJWzx2LonA/viewform?usp=dialog">formulaire</a> pour postuler en tant que staff ainsi que rejoindre notre serveur discord
-    </p>
-  </div>
-  <script src="script.js"></script>
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Get in touch with our team</p>
+            </div>
+            <div class="contact-content">
+                <p>For any questions, suggestions, or partnership inquiries, please join our Discord server where our team and community can assist you.</p>
+                <a href="https://discord.gg/jWfZdcDftr" class="discord-btn">
+                    <i class="fab fa-discord"></i>
+                    Join Our Discord Server
+                </a>
+            </div>
+        </div>
+    </section>
+    <script src="./site 2.js"></script>
 </body>
-<footer>
-  <div>
-    <h1 id="p">
-      Nos réseaux sociaux
-    </h1>
-    <div id="reseaux">
-      <p>
-        <a href="https://discord.gg/jWfZdcDftr"><img src="./image/logo discord.png" alt="Discord" class="discord-logo">
-        </a>
-      </p>
-      <p>
-        <a href="https://x.com/YF7_BS"><img src="./image/logo X.png" alt="X" class="X-logo">
-        </a>
-      </p>
-      <p>
-        <a href="https://x.com/YF7Tournaments"><img src="./image/logo X.png" alt="matcherino-X" class="matcherino-x"></a>
-      </p>
-      <p>
-        <a href="https://matcherino.com/supercell/u/YF7/2081999/teams"><img src="./image/logo matcherino.png" alt="matcherino" class="matcherino-web"></a>
-      </p>
-    </div>
-  </div>
-</footer>
+
+    <footer>
+        <div class="container">
+            <ul class="footer-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tournaments">Tournaments</a></li>
+                <li><a href="#winners">Winners</a></li>
+                <li><a href="#partners">Partners</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <p class="copyright">&copy; 2025 YF7 Tournaments. All rights reserved.</p>
+        </div>
+    </footer>
 </html>
