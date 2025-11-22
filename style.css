@@ -1,5 +1,5 @@
 :root {
-            --primary: #FF6B00;
+            --primary: #ffd100;
             --secondary: #8A2BE2;
             --accent: #00C853;
             --light: #f8f9fa;
@@ -480,4 +480,3 @@
                 grid-template-columns: 1fr;
             }
         }
-</style>
