@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>surprise</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: black;
+            color: white;
+        }
+
+        header {
+            border-bottom: 2px solid #fff;
+            padding: 20px 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: yellow;
+        }
+
+        .messages {
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+            padding: 40px;
+        }
+
+        /* Bloc de message */
+        .message {
+            display: flex;
+            width: 100%;
+        }
+
+        /* Texte + images + vidéos */
+        .message pre,
+        .message img,
+        .message video {
+            max-width: 50%;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        /* Images */
+        .message img {
+            max-width: 300px;
+            border-radius: 10px;
+        }
+
+        /* Vidéos */
+        .message video {
+            border-radius: 10px;
+        }
+
+        /* Messages impairs = gauche */
+        .message:nth-child(odd) {
+            justify-content: flex-start;
+            text-align: left;
+        }
+
+        /* Messages pairs = droite */
+        .message:nth-child(even) {
+            justify-content: flex-end;
+            text-align: right;
+        }
+
+        footer {
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 0;
+            color: yellow;
+            font-size: 36px;
+        }
+
+        .heart {
+            margin-top: 30px;
+        }
+
+        i {
+            color: #000;
+            font-size: 90px;
+            animation: beat 0.9s infinite;
+            text-shadow: 
+                0px 0px 5px red, 
+                0px 0px 45px red, 
+                0px 0px 90px red;
+        }
+
+        @keyframes beat {
+            0% {
+                transform: scale(1);
+            }
+            20% {
+                transform: scale(1.15);
+            }
+            40% {
+                transform: scale(1.4);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Petite Surprise pour toi BG</h1>
+    </header>
+
+    <div class="messages">
+
+        <div class="message">
+            <pre>
+Salut mon roi, 
+Je tiens à te remercier pour la confiance que tu as en moi , tu as du courage de faire alors que tu as une vie à côté. 
+Merci beaucoup ! 
+NarToxY
+            </pre>
+        </div>
+
+        <div class="message">
+            <pre>
+Modo Twitch chez mon cher Yanis depuis maintenant 3 ans, 
+j’espère qu’il pourra gravir les échelons et devenir une pointure dans le milieu des casteurs, 
+et ainsi réaliser son rêve. Je suis heureux de pouvoir suivre cette avancée à ses côtés, 
+de le voir buzzer comme ça, et je continuerai d’apporter au maximum ma pierre à l’édifice.
+
+Signé,
+Erwanglp, le Modo 🐒
+            </pre>
+        </div>
+
+        <div class="message">
+            <pre>
+YF7
+Ça fait plus d’un an qu'on se connait frro mais je voulais te dire à quel point je te soutiens 
+et je te soutiendrai dans absolument tout ce que tu entreprends même si je ne le montre pas au premier plan, 
+que de la force et les cast world c’est pour l’année pro
+ikassoss-qin hui-rush for loose ❤️
+            </pre>
+        </div>
+
+        <div class="message">
+            <pre>
+Continue comme sa frérot,  tu vas reussir à atteindre tes objectifs,  
+je te soutiendrais toujours. Reste comme tu es.
+River
+            </pre>
+        </div>
+
+        <div class="message">
+            <img src="./lena.jpg" alt="lena">
+        </div>
+
+        <div class="message">
+            <pre>
+Yf7 Je t rencontrer t’avais 2/3 viewers 
+mtn t devenu un grand bonhomme 
+Aussi nul qu’a l’époque à Brawl stars mais bon on peux pas être bon dans tout les domaine 🦧 
+sache que je t tjr soutenue et je te souhaite que du bien ! 🙈 
+chocapic
+            </pre>
+        </div>
+
+        <div class="message">
+            <pre>
+Mon frérot, on c'est rencontré sur twitch, on a parlé sur discord et regarde où on en est.
+Comme quoi c'est pas parce qu'on ne connait pas une personne IRL que l'on peut pas être pote.
+Tout a commencé d'un projet inimaginable pour la plupart des gens mais nous on y a cru et on a réussi et on continuera à réussir
+Et tkt un jour je t'inviterai à une de mes soirées et tu comprendras pourquoi j'ai raté un ou deux tournois 😂 .
+En tout cas j'espere qu'on continuera comme ca et envoi 10 euros en vif j'ai un pass valo à acheter😂😂😂 .
+Le Gandtz
+            </pre>
+        </div>
+
+        <div class="message">
+            <pre>
+Yanis... YF7... le streamer, le joueur, l'homme, la légende.
+Ça fait plus d'un an que je suis là. Sub Prime fidèle. Modérateur exemplaire. 
+Présent dans l'ombre, 
+toujours prêt à ban, toujours là pour ton gameplay douteux, comme si tu jouais avec les pieds. 
+(envoie les en privé)
+Depuis que j't'ai vu rater un super avec Shelly à bout portant, j'ai su... t'étais l'élu.
+Alors voilà, c'est pas une demande en mariage. 
+C'est juste une petite place dans ton cœur... ou au moins sur ton Discord.
+Même quand tu prends 3 kills et que tu dis "j'carry", 
+même quand tu cries sur ton micro... j'me dis: ouais, c'est ça l'amour.
+Alors donne-moi ce rôle. J'suis pas juste un viewer. J'suis le viewer.
+            </pre>
+        </div>
+
+        <div class="message">
+            <pre>
+Toi YF7, t’es live toujours aussi chouette
+Les vocs, toujours rempli de coque
+YF7, toi qui est le roi, toi qui mène la loi
+Guide nous avec ta main, amène nous dans un monde zinzin
+YF7, on est là, nous tes bouffonnes pour te mettre ta couronne
+Ne pense à rien car on sera là le demain
+clash guy
+            </pre>
+        </div>
+
+        <!-- Vidéo intégrée correctement -->
+        <div class="message">
+            <video src="./reflex.mp4" type="video/mp4" class="reflex" controls width="640" height="360"></video>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>De la part de personne cher pour toi</p>
+        <div class="heart">
+            <i class="fa-solid fa-heart"></i>
+        </div>
+    </footer>
+</body>
+</html>
