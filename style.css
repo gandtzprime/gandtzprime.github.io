@@ -488,3 +488,49 @@
       display: inline-block;
       cursor: pointer; /* Change le curseur au survol */
     }
+
+    /* --- Calendrier --- */
+#calendar {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: #010108;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+#calendar h2 { text-align: center; margin-bottom: 20px; color: #fff; }
+#tournament-list { list-style: none; padding: 0; }
+#tournament-list li {
+  background-color: var(--primary);
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.tournament-info { display: flex; flex-direction: column; }
+.countdown { font-weight: bold; color: #050401; margin-top: 5px; }
+.btn-register {
+  background-color: black;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-register:hover { background-color: #ff6347; }
+.copy-btn {
+  background-color: #3b3b60;
+  color: #fff;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.85em;
+  margin-left: 8px;
+}
+.copy-btn:hover { background-color: #4b4b75; }
