@@ -542,6 +542,14 @@ footer {
     font-size: 0.9rem;
 }
 
+.carre-cliquable { 
+    width: 10px; 
+    height: 10px; 
+    background-color: transparent; /* Couleur du carré */ 
+    display: inline-block; 
+    cursor: pointer; /* Change le curseur au survol */ 
+}
+
 /* ---------------- Responsive ---------------- */
 @media (max-width: 768px) {
     .nav-links {
