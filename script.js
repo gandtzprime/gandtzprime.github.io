@@ -152,17 +152,6 @@
         });
     });
 
-    renderTournaments();
-    renderWinners();
-
-    setInterval(updateCountdowns, 1000);
-
-    setInterval(() => {
-        renderTournaments();
-        renderWinners();
-    }, 30000);
-
-
     // --- modifier les tournois qui s'affiche ---
 const tournaments = [
     { name: "YF7 Tournaments #8", date: "2025-12-06T21:00:00", link: "https://matcherino.com/supercell/tournaments/175245" },

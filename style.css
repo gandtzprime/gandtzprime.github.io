@@ -223,6 +223,40 @@
             color: var(--gray);
             margin-bottom: 15px;
         }
+
+        /* --- WINNERS alternating layout --- */
+#winners-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px 0;
+}
+
+/* Style général des images */
+#winners-container img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Impaires → à gauche */
+#winners-container img:nth-child(odd) {
+    align-self: flex-start;
+    box-shadow: 12px 12px 25px rgba(0,0,0,0.45);
+}
+
+/* Paires → à droite */
+#winners-container img:nth-child(even) {
+    align-self: flex-end;
+    box-shadow: -12px 12px 25px rgba(0,0,0,0.45);
+}
+
+/* Petit effet au survol */
+#winners-container img:hover {
+    transform: scale(1.03);
+}
+
         
         .players-list {
             list-style: none;
