@@ -273,8 +273,8 @@
         }
         
         .partner-logo {
-            height: 140px;
-            width: 100%;
+            height: cover;
+            width: cover;
             display: flex;
             align-items: center;
             justify-content: center;
