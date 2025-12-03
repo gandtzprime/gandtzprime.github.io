@@ -44,11 +44,22 @@ nav {
 }
 
 .logo {
+    display: flex;            /* Met l'image et le texte sur la même ligne */
+    align-items: center;      /* Centre verticalement l'image et le texte */
+    gap: 8px;                 /* Espace entre logo et texte, réduit si nécessaire */
+    text-decoration: none;
     font-size: 1.8rem;
     font-weight: 700;
     color: var(--primary);
-    text-decoration: none;
 }
+
+.logo-img {
+    height: 50px;             /* Ajuste la taille du logo */
+    width: auto;
+    display: block;            /* Supprime les espaces en ligne */
+    margin: 0;                 /* Supprime tout margin par défaut */
+}
+
 
 .nav-links {
     display: flex;
