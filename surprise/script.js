@@ -8,7 +8,7 @@
     const remember = document.querySelector('.remember-forgot input[type="checkbox"]').checked;
 
     // Exemple d'identifiants
-    if (user === "sendfeet" && pass === "12-05-2009") {
+    if (user === "sendfeet" && pass === "12-04-2009") {
 
       if (remember) {
         localStorage.setItem("connected", "yes"); // garde la connexion
@@ -24,3 +24,4 @@
   if (localStorage.getItem("connected") === "yes") {
     window.location.href = "principal.html";
   }
+
