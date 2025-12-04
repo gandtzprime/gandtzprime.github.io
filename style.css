@@ -11,13 +11,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Lilita One", sans-serif;
 }
 
 body {
     background-color: var(--dark);
     color: var(--light);
     line-height: 1.6;
+    font-family: "Lilita One", sans-serif;
 }
 
 .container {
@@ -592,4 +593,11 @@ footer {
     #winners-container a img {
         max-width: 90%;
     }
+}
+
+@font-face {
+    font-family: "Lilita One";
+    src: url("./fonts/LilitaOne.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
