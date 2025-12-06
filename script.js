@@ -155,7 +155,7 @@
     // --- modifier les tournois qui s'affiche ---
 const tournaments = [
     { name: "YF7 Tournaments #8", date: "2025-12-06T21:00:00", link: "https://matcherino.com/supercell/tournaments/175245" },
-    { name: "YF7 Tournaments X BTLN #2", date: "2025-12-13T21:00:00", link: "https://matcherino.com/supercell/tournaments/175914" },
+    { name: "Spike Cup #2", date: "2025-12-13T21:00:00", link: "https://matcherino.com/supercell/tournaments/175914" },
     { name: "YF7 Tournaments #9", date: "2025-12-20T21:00:00", link: "https://matcherino.com/supercell/tournaments/175911" }
 ];
 
