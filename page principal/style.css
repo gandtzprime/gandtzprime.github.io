@@ -1,0 +1,505 @@
+:root {
+    --primary: #FFD100;
+    --secondary: #8A2BE2;
+    --accent: #00C853;
+    --light: #f8f9fa;
+    --dark: #121212;
+    --gray: #6c757d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lilita One", sans-serif;
+}
+
+/* ---------------- Bandeau en haut ---------------- */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+body {
+    background-color: var(--dark);
+    color: var(--light);
+    line-height: 1.6;
+    font-family: "Lilita One", sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: rgba(18, 18, 18, 0.95);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+    display: block;
+    margin: 0;
+}
+
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    color: var(--light);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+/* ---------------- Accueil ---------------- */
+
+.hero {
+    min-height: calc(100vh - 80px);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-top: 300px;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: var(--primary);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: var(--light);
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary);
+    color: var(--light);
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--secondary);
+    transform: translateY(-3px);
+}
+
+section {
+    padding: 100px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.section-title p {
+    color: var(--gray);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 60px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 209, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(255, 209, 0, 0.2);
+}
+
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: var(--primary);
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.card p {
+    color: var(--gray);
+    font-size: 0.95rem;
+}
+
+/* ---------------- Tournaments ---------------- */
+.tournaments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.tournament-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.tournament-card:hover {
+    transform: translateY(-10px);
+}
+
+.tournament-img {
+    height: 200px;
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+.tournament-content {
+    padding: 20px;
+}
+
+.tournament-content h3 {
+    margin-bottom: 10px;
+    color: var(--primary);
+}
+
+.tournament-content p {
+    margin-bottom: 15px;
+}
+
+.countdown {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.countdown-item {
+    text-align: center;
+}
+
+.countdown-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.countdown-label {
+    font-size: 0.8rem;
+    color: var(--gray);
+}
+
+#calendar {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: var(--primary);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+#tournament-list { 
+    list-style: none; 
+    padding: 0; 
+}
+
+#tournament-list li {
+    background-color: black;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tournament-info { 
+    display: flex; 
+    flex-direction: column; 
+    color: #fff;
+}
+
+.countdown { 
+    font-weight: bold; 
+    color: #fff; 
+    margin-top: 5px; 
+}
+
+.btn-register {
+    background-color: var(--primary);
+    color: black;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.btn-register:hover { 
+    background-color: #ff6347; 
+}
+
+.copy-btn {
+    background-color: #3b3b60;
+    color: #fff;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.85em;
+    margin-left: 8px;
+}
+
+.copy-btn:hover { 
+    background-color: #4b4b75; 
+}
+
+/* ---------------- Contact ---------------- */
+#contact {
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+#contact .section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#contact .section-title h2 {
+    font-size: 3rem;
+    color: var(--primary);
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.contact-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-content p {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.discord-btn {
+    background-color: #5865F2;
+    display: inline-flex;
+    align-items: center;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--light);
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.discord-btn:hover {
+    background-color: #4752c4;
+    transform: translateY(-3px);
+}
+
+.discord-btn i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+/* ---------------- Footer ---------------- */
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.footer-links li {
+    margin: 0 15px;
+}
+
+.footer-links a {
+    color: var(--gray);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--primary);
+}
+
+.copyright {
+    color: var(--gray);
+    font-size: 0.9rem;
+}
+
+.carre-cliquable { 
+    width: 10px; 
+    height: 10px; 
+    background-color: transparent; /* Couleur du carré */ 
+    display: inline-block; 
+    cursor: pointer; /* Change le curseur au survol */ 
+}
+
+/* ---------------- Responsive ---------------- */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--dark);
+        flex-direction: column;
+        padding: 20px 0;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+    
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+    
+    .hamburger {
+        display: block;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .partners-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #winners-container a {
+        justify-content: center;
+    }
+    
+    #winners-container a img {
+        max-width: 90%;
+    }
+}
+
+@font-face {
+    font-family: "Lilita One";
+    src: url("./fonts/LilitaOne.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media (max-width: 480px) {
+    .logo-img {
+        height: 40px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .container {
+        padding: 0 12px;
+    }
+
+    .btn {
+        padding: 10px 16px;
+        font-size: 0.95rem;
+    }
+}
