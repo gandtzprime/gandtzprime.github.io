@@ -127,7 +127,7 @@ nav {
 .btn {
     display: inline-block;
     background-color: var(--primary);
-    color: var(--light);
+    color: var(--dark);
     padding: 12px 30px;
     border-radius: 5px;
     text-decoration: none;
