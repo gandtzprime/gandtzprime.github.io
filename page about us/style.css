@@ -173,208 +173,20 @@ nav {
     color: var(--gray);
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-    .team-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .hover-text {
-        max-height: none;
-        opacity: 1;
-    }
-}
-
-@font-face {
-    font-family: "Lilita One";
-    src: url("./fonts/LilitaOne.ttf") format("truetype");
-}
-:root {
-    --primary: #FFD100;
-    --light: #f8f9fa;
-    --dark: #121212;
-    --gray: #6c757d;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Lilita One", sans-serif;
-}
-
-body {
-    background: var(--dark);
-    color: var(--light);
-}
-
-.container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 20px;
-}
-
-/* HEADER */
-header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    background: rgba(18, 18, 18, 0.95);
-    z-index: 1000;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 0;
-}
-
-.logo-img {
-    height: 50px;
-}
-
-/* ABOUT */
-#about {
-    padding-top: 140px;
-}
-
-.section-title {
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-.section-title h2 {
-    color: var(--primary);
-    font-size: 3rem;
-}
-
-.section-title p {
-    color: var(--gray);
-}
-
-/* TEAM GRID */
-.team-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
-    margin-bottom: 80px;
-}
-
-.team-member {
-    position: relative;
-    text-align: center;
+/* Hamburger */
+.hamburger {
+    display: none;
+    flex-direction: column;
     cursor: pointer;
+    gap: 5px;
 }
 
-.team-member img {
-    width: 220px;
-    height: 220px;
-    border-radius: 50%;
-    margin: auto;
+.hamburger span {
     display: block;
-    transition: transform 0.3s ease;
-}
-
-/* TEXTE CACHÉ */
-.hover-text {
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: all 0.4s ease;
-    margin-top: 15px;
-}
-
-/* HOVER */
-.team-member:hover img {
-    transform: scale(1.05);
-}
-
-.team-member:hover .hover-text {
-    max-height: 300px;
-    opacity: 1;
-}
-
-.hover-text h3 {
-    color: var(--primary);
-    margin-bottom: 8px;
-}
-
-.hover-text p {
-    color: var(--gray);
-    font-size: 0.95rem;
-}
-
-/* MODERATOR */
-.moderator {
-    max-width: 900px;
-    margin: auto;
-    text-align: center;
-    color: var(--gray);
-}
-
-/* ---------------- Footer ---------------- */
-footer {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 40px 0;
-    text-align: center;
-}
-
-.footer-links {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin-bottom: 20px;
-}
-
-.footer-links li {
-    margin: 0 15px;
-}
-
-.footer-links a {
-    color: var(--gray);
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.footer-links a:hover {
-    color: var(--primary);
-}
-
-.copyright {
-    color: var(--gray);
-    font-size: 0.9rem;
-}
-/* ---------------- Footer ---------------- */
-footer {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 40px 0;
-    text-align: center;
-}
-
-.footer-links {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin-bottom: 20px;
-}
-
-.footer-links li {
-    margin: 0 15px;
-}
-
-.footer-links a {
-    color: var(--gray);
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.footer-links a:hover {
-    color: var(--primary);
-}
-
-.copyright {
-    color: var(--gray);
-    font-size: 0.9rem;
+    width: 25px;
+    height: 3px;
+    background-color: var(--light);
+    border-radius: 3px;
 }
 
 /* RESPONSIVE */
@@ -392,4 +204,32 @@ footer {
 @font-face {
     font-family: "Lilita One";
     src: url("./fonts/LilitaOne.ttf") format("truetype");
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--dark);
+        flex-direction: column;
+        padding: 20px 0;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+        z-index: 999;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: flex;
+    }
 }
