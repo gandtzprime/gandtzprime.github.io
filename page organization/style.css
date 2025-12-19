@@ -117,90 +117,142 @@ h2{
 }
 
 /* ---------------- card ---------------- */
-.card-container {
-    display: flex;
-    justify-content: center; /* centre les cartes */
-    gap: 30px; /* espace entre les cartes */
-    padding: 60px 0; /* espace au-dessus et en dessous */
-    flex-wrap: wrap; /* pour que ça s'adapte aux petits écrans */
+/* ---- Section et titre ---- */
+#partners {
+    padding: 60px 20px; /* marge en haut et en bas */
+    text-align: center; /* centre le titre et le texte */
 }
 
-.card {
-    background-color: rgba(255, 209, 0, 0.1);
-    color: var(--light);
-    text-decoration: none;
-    width: 250px;
-    padding: 30px;
-    border-radius: 15px;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card:hover {
-    transform: scale(1.05); /* léger zoom */
-    box-shadow: 0 10px 20px rgba(0,0,0,0.5); /* ombre au survol */
-}
-
-.card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
+#partners .section-title h2 {
+    font-size: 2rem;
     color: var(--primary);
+    margin-bottom: 15px;
 }
 
-.card p {
+#partners .section-title p {
     font-size: 1rem;
-    line-height: 1.5;
     color: var(--gray);
+    margin-bottom: 40px; /* espace entre le texte et les cartes */
 }
 
-.card {
-    position: relative; /* nécessaire pour le pseudo-élément */
+/* ---- Grid des cartes ---- */
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 50px;
+    justify-content: center; /* centre les cartes */
+    max-width: 400px; /* largeur maximale pour éviter qu'elles s'étirent */
+    margin: 0 auto; /* centre le grid horizontalement */
+}
+
+/* ---- Carte partenaire ---- */
+.partner-card {
     background: linear-gradient(145deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
-    color: var(--light);
-    text-decoration: none;
-    width: 250px;
-    padding: 30px;
     border-radius: 15px;
+    padding: 0;
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-    overflow: hidden; /* pour cacher le débordement de la lisière */
+    transition: all 0.4s ease;
+    overflow: hidden;
     border: 1px solid rgba(255, 107, 0, 0.1);
+    position: relative;
 }
 
-.card::before {
-    content: "";
+.partner-card::before {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 3px; /* plus fine */
+    right: 0;
+    height: 3px;
     background: linear-gradient(90deg, var(--primary), var(--secondary));
     transform: scaleX(0);
-    transform-origin: center; /* démarre du milieu */
-    transition: transform 0.3s, height 0.3s;
+    transition: transform 0.4s ease;
 }
 
-.card:hover {
-    transform: scale(1.05); /* léger zoom */
-    box-shadow: 0 10px 20px rgba(0,0,0,0.5); /* ombre au survol */
+.partner-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    border-color: rgba(255, 107, 0, 0.3);
 }
 
-.card:hover::before {
-    transform: scaleX(1); /* s'étend vers les côtés depuis le centre */
-    height: 4px; /* légèrement plus épaisse au survol */
+.partner-card:hover::before {
+    transform: scaleX(1);
 }
 
-.cards-title {
-    text-align: center;
+/* ---- Logo ---- */
+.partner-logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(255, 107, 0, 0.05);
+    transition: all 0.4s ease;
+    min-height: 100px;
+}
+
+.partner-card:hover .partner-logo {
+    background: rgba(255, 107, 0, 0.1);
+}
+
+.partner-logo img {
+    max-width: 100%;
+    max-height: 120px;
+    object-fit: contain;
+    transition: transform 0.4s ease;
+    filter: brightness(0.9);
+}
+
+.partner-card:hover .partner-logo img {
+    transform: scale(1.05);
+    filter: brightness(1);
+}
+
+/* ---- Infos ---- */
+.partner-info {
+    padding: 20px 15px;
+}
+
+.partner-name {
+    font-size: 1.4rem;
     color: var(--primary);
-    font-size: 2rem;
-    margin-bottom: -20px; /* espace entre le titre et les cartes */
+    margin-bottom: 8px;
+    font-weight: 700;
 }
 
-.card-section {
-    padding-top: 80px; /* espace entre la section précédente et les cartes */
-    padding-bottom: 60px; /* optionnel : espace en dessous */
+.partner-description {
+    color: var(--gray);
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    line-height: 1.5;
 }
+
+.partner-website {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(255, 107, 0, 0.1);
+    color: var(--primary);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 107, 0, 0.2);
+}
+
+.partner-website:hover {
+    background: rgba(255, 107, 0, 0.2);
+    color: var(--light);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 107, 0, 0.2);
+}
+
+.partner-website i {
+    margin-right: 6px;
+    font-size: 0.8rem;
+}
+
 
 /* ---------------- Footer ---------------- */
 footer {
