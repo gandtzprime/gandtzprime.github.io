@@ -100,7 +100,7 @@ nav {
 .hero {
     min-height: calc(100vh - 80px);
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                url('https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+                url('./image/test.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
     text-align: center;
