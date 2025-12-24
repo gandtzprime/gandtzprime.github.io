@@ -442,13 +442,18 @@ body {
         position: fixed; /* menu fixe sur l'écran */
         top: 70px; /* juste en dessous du header */
         left: 0;
-        width: 100vw; /* s'assure qu'il occupe exactement la largeur de la fenêtre */
+        width: 100%; /* s'assure qu'il occupe exactement la largeur de la fenêtre */
         background-color: var(--dark);
         flex-direction: column;
         padding: 20px 0;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
         overflow-x: hidden; /* empêche le scroll horizontal */
         z-index: 999; /* au-dessus des autres éléments */
+    }
+
+    html, body {
+    overflow-x: hidden;
+    max-width: 100%;
     }
     
     .nav-links.active {
