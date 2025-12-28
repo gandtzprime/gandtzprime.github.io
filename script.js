@@ -218,3 +218,7 @@ upcoming.forEach((t, index) => {
     updateCountdown();
     setInterval(updateCountdown, 60000);
 });
+
+if (window.location.hostname === "gandtprime.github.io") {
+    window.location.replace("https://yf7tournaments.fr/");
+  }
