@@ -1,0 +1,13 @@
+# Bloque les pages et dossiers que l'on ne veut pas indexer
+User-agent: *
+Disallow: /surprise/
+
+# Exemple : si tu as d'autres dossiers privés à cacher, tu peux les ajouter ici
+# Disallow: /page_about_us/old/
+# Disallow: /test/
+
+# Autorise tout le reste
+Allow: /
+
+# Sitemap pour aider Google à crawler efficacement
+Sitemap: https://yf7tournaments.fr/sitemap.xml
