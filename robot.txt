@@ -2,10 +2,6 @@
 User-agent: *
 Disallow: /surprise/
 
-# Exemple : si tu as d'autres dossiers privés à cacher, tu peux les ajouter ici
-# Disallow: /page_about_us/old/
-# Disallow: /test/
-
 # Autorise tout le reste
 Allow: /
 
