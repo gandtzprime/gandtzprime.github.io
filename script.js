@@ -155,10 +155,10 @@
     // --- modifier les tournois qui s'affiche ---
 const tournaments = [
     { name: "YF7 Tournaments #10", date: "2026-01-10T21:00:00", link: "https://matcherino.com/supercell/tournaments/177141" },
-    { name: "YF7 Tournaments #11", date: "2026-01-11T21:00:00", link: "https://matcherino.com/supercell/tournaments/177133" },
+    { name: "YF7 Tournaments #11", date: "2026-01-24T21:00:00", link: "https://matcherino.com/supercell/tournaments/177133" },
     { name: "Spike Cup #3", date: "2026-01-17T21:00:00", link: "https://matcherino.com/supercell/tournaments/177134" },
-    { name: "YF7 Tournaments #12", date: "2026-01-24T21:00:00", link: "https://matcherino.com/supercell/tournaments/177136" },
-    { name: "YF7 Tournaments #13", date: "2026-01-31T21:00:00", link: "https://matcherino.com/supercell/tournaments/177140" },
+    { name: "YF7 Tournaments #12", date: "2026-01-31T21:00:00", link: "https://matcherino.com/supercell/tournaments/177136" },
+    { name: "YF7 Tournaments #13", date: "2026-02-07T21:00:00", link: "https://matcherino.com/supercell/tournaments/177140" },
 ];
 
 
