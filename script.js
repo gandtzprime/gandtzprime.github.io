@@ -154,11 +154,18 @@
 
     // --- modifier les tournois qui s'affiche ---
 const tournaments = [
-    { name: "YF7 Tournaments #10", date: "2026-01-10T21:00:00", link: "https://matcherino.com/supercell/tournaments/177141" },
-    { name: "YF7 Tournaments #11", date: "2026-01-24T21:00:00", link: "https://matcherino.com/supercell/tournaments/177133" },
-    { name: "Spike Cup #3", date: "2026-01-23T21:00:00", link: "https://matcherino.com/supercell/tournaments/177134" },
-    { name: "YF7 Tournaments #12", date: "2026-01-31T21:00:00", link: "https://matcherino.com/supercell/tournaments/177136" },
-    { name: "YF7 Tournaments #13", date: "2026-02-08T18:00:00", link: "https://matcherino.com/supercell/tournaments/177140" },
+    { name: "Spike Cup #4", date: "2026-02-18T21:00:00", link: "https://matcherino.com/supercell/tournaments/181108" },
+    { name: "Brawl Legends Series - Qualifier #4", date: "2026-02-22T21:00:00", link: "https://matcherino.com/supercell/tournaments/181531" },
+    { name: "YF7 Tournaments #14", date: "2026-02-28T21:00:00", link: "https://matcherino.com/supercell/tournaments/181109" },
+    { name: "Brawl Legends Series - Qualifier #5", date: "2026-03-01T21:00:00", link: "https://matcherino.com/supercell/tournaments/181537" },
+    { name: "Brawl Legends Series - Qualifier #6", date: "2026-03-06T18:00:00", link: "https://matcherino.com/supercell/tournaments/181538" },
+    { name: "YF7 Tournaments #15", date: "2026-03-07T21:00:00", link: "https://matcherino.com/supercell/tournaments/181106" },
+    { name: "Brawl Legends Series - Qualifier #7", date: "2026-03-13T21:00:00", link: "https://matcherino.com/supercell/tournaments/181539" },
+    { name: "Brawl Legends Series - Qualifier #8", date: "2026-03-14T21:00:00", link: "https://matcherino.com/supercell/tournaments/181827" },
+    { name: "Spike Cup #5", date: "2026-03-21T21:00:00", link: "https://matcherino.com/supercell/tournaments/181110" },
+    { name: "YF7 Tournaments #16", date: "2026-03-22T21:00:00", link: "https://matcherino.com/supercell/tournaments/181111" },
+    { name: "Brawl Legends Series - Big Final $1111", date: "2026-03-28  T21:00:00", link: "https://matcherino.com/supercell/tournaments/181534" },
+
 ];
 
 
