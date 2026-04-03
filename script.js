@@ -154,18 +154,12 @@
 
     // --- modifier les tournois qui s'affiche ---
 const tournaments = [
-    { name: "Spike Cup #4", date: "2026-02-18T21:00:00", link: "https://matcherino.com/supercell/tournaments/181108" },
-    { name: "Brawl Legends Series - Qualifier #4", date: "2026-02-22T21:00:00", link: "https://matcherino.com/supercell/tournaments/181531" },
-    { name: "YF7 Tournaments #14", date: "2026-02-28T21:00:00", link: "https://matcherino.com/supercell/tournaments/181109" },
-    { name: "Brawl Legends Series - Qualifier #5", date: "2026-03-01T21:00:00", link: "https://matcherino.com/supercell/tournaments/181537" },
-    { name: "Brawl Legends Series - Qualifier #6", date: "2026-03-06T18:00:00", link: "https://matcherino.com/supercell/tournaments/181538" },
-    { name: "YF7 Tournaments #15", date: "2026-03-07T21:00:00", link: "https://matcherino.com/supercell/tournaments/181106" },
-    { name: "Brawl Legends Series - Qualifier #7", date: "2026-03-13T21:00:00", link: "https://matcherino.com/supercell/tournaments/181539" },
-    { name: "Brawl Legends Series - Qualifier #8", date: "2026-03-14T21:00:00", link: "https://matcherino.com/supercell/tournaments/181827" },
-    { name: "Spike Cup #5", date: "2026-03-21T21:00:00", link: "https://matcherino.com/supercell/tournaments/181110" },
-    { name: "YF7 Tournaments #16", date: "2026-03-22T21:00:00", link: "https://matcherino.com/supercell/tournaments/181111" },
-    { name: "Brawl Legends Series - Big Final $1111", date: "2026-03-28  T21:00:00", link: "https://matcherino.com/supercell/tournaments/181534" },
-
+    { name: "YF7 Tournament #16", date: "2026-04-07T21:00:00", link: "https://matcherino.com/supercell/tournaments/181111" },
+    { name: "Brawl Legends Series - Big Final $1111", date: "2026-04-10T21:00:00", link: "https://matcherino.com/supercell/tournaments/181534" },
+    { name: "YF7 Tournament #17", date: "2026-04-13T21:00:00", link: "https://matcherino.com/supercell/tournaments/189427" },
+    { name: "YF7 Tournament SA #1", date: "2026-04-15T21:00:00", link: "https://matcherino.com/supercell/tournaments/189432" },
+    { name: "YF7 Tournament SA #2", date: "2026-04-25T18:00:00", link: "https://matcherino.com/supercell/tournaments/189429" },
+    { name: "YF7 Tournament #18", date: "2026-05-02T21:00:00", link: "https://matcherino.com/supercell/tournaments/189437" },
 ];
 
 
