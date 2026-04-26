@@ -154,12 +154,11 @@
 
     // --- modifier les tournois qui s'affiche ---
 const tournaments = [
-    { name: "YF7 Tournament #16", date: "2026-04-07T21:00:00", link: "https://matcherino.com/supercell/tournaments/181111" },
-    { name: "Brawl Legends Series - Big Final $1111", date: "2026-04-10T21:00:00", link: "https://matcherino.com/supercell/tournaments/181534" },
-    { name: "YF7 Tournament #17", date: "2026-04-13T21:00:00", link: "https://matcherino.com/supercell/tournaments/189427" },
-    { name: "YF7 Tournament SA #1", date: "2026-04-15T21:00:00", link: "https://matcherino.com/supercell/tournaments/189432" },
-    { name: "YF7 Tournament SA #2", date: "2026-04-25T18:00:00", link: "https://matcherino.com/supercell/tournaments/189429" },
     { name: "YF7 Tournament #18", date: "2026-05-02T21:00:00", link: "https://matcherino.com/supercell/tournaments/189437" },
+    { name: "YF7 Tournament #19", date: "2026-05-09T21:00:00", link: "https://matcherino.com/supercell/tournaments/197684" },
+    { name: "YF7 Tournament #20", date: "2026-05-16T21:00:00", link: "https://matcherino.com/supercell/tournaments/197687" },
+    { name: "YF7 Tournament #21", date: "2026-05-23T21:00:00", link: "https://matcherino.com/supercell/tournaments/197688" },
+    { name: "YF7 Tournament #22", date: "2026-05-30T21:00:00", link: "https://matcherino.com/supercell/tournaments/197689" },
 ];
 
 
