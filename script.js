@@ -158,7 +158,10 @@ const tournaments = [
     { name: "YF7 Tournament #19", date: "2026-05-09T21:00:00", link: "https://matcherino.com/supercell/tournaments/197684" },
     { name: "YF7 Tournament #20", date: "2026-05-16T21:00:00", link: "https://matcherino.com/supercell/tournaments/197687" },
     { name: "YF7 Tournament #21", date: "2026-05-23T21:00:00", link: "https://matcherino.com/supercell/tournaments/197688" },
-    { name: "YF7 Tournament #22", date: "2026-05-30T21:00:00", link: "https://matcherino.com/supercell/tournaments/197689" },
+    { name: "YF7 Tournament SA #3", date: "2026-05-18T21:00:00", link: "https://matcherino.com/supercell/tournaments/197685" },
+    { name: "YF7 Tournament NA #1", date: "2026-05-20T21:00:00", link: "https://matcherino.com/supercell/tournaments/197685" },
+    { name: "YF7 OG Sports #2", date: "2026-05-23T21:00:00", link: "https://matcherino.com/supercell/tournaments/197685" },
+    { name: "YF7 Tournament SA #4 ", date: "2026-05-27T21:00:00", link: "https://matcherino.com/supercell/tournaments/197685" },
 ];
 
 
